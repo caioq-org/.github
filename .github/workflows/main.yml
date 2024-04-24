@@ -14,4 +14,4 @@ jobs:
         callback_url: ${{ github.event.client_payload.callback_url }}
         sha: ${{ github.event.client_payload.sha }}
         run_id: ${{ github.run_id }}
-        name: ${{ github.workflow }} # Default: name of workflow. This name is shown with the 
+        name: ${{ github.event.client_payload.repository.full_name }} global workflow
