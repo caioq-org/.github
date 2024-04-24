@@ -20,5 +20,3 @@ jobs:
           sha: ${{ github.event.client_payload.sha }}
           run_id: ${{ github.run_id }}
           name: Testing Global Workflows
-          enforce: false # <--- Enforce required status check. Default: false
-          enforce_admin: false # <--- Enforce required status check for admins. Default: false
