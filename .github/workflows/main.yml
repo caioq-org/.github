@@ -10,3 +10,12 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello, World!"
+
+      - name: Organization workflow action
+        uses: SvanBoxel/organization-workflows@1.4.0
+        with:
+          id: ${{ github.event.client_payload.id }}
+          callback_url: ${{ github.event.client_payload.callback_url }}
+          sha: ${{ github.event.client_payload.sha }}
+          run_id: ${{ github.run_id }}
+          name: Testing Global Workflows
