@@ -20,3 +20,5 @@ jobs:
           sha: ${{ github.event.client_payload.sha }}
           run_id: ${{ github.run_id }}
           name: Testing Global Workflows
+          enforce: true
+          enforce_admin: true
