@@ -1,4 +1,4 @@
-workflows_repository: global-workflows
-include_workflows_repository: true
+# workflows_repository: global-workflows
+include_workflows_repository: false
 exclude:
   repositories: []
