@@ -16,3 +16,5 @@ jobs:
           sha: ${{ github.event.client_payload.sha }}
           run_id: ${{ github.run_id }}
           name: ${{ github.workflow }}
+          enforce: false
+          enforce_admin: false
